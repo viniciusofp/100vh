@@ -1,6 +1,7 @@
 $('#circulo').waypoint(function(direction) {
-  $('#fixed').toggleClass('hide');
-  $('#menu').toggleClass('hide');
+
+  $('#fixed').toggleClass('way');
+  $('#menu').toggleClass('way');
 },{
   offset:'60px'
 });

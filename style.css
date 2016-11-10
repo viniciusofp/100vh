@@ -4,39 +4,72 @@ body {
 
 #header {
 	position: relative;
-	height: 100vh;
+	height: 100px;
 	width: 100%;
 }
 
 #fixed {
+	filter: brightness(100%);
+	z-index: 999999;
 	position: fixed;
 	background-image: url('fundo1.jpeg');
 	background-size: cover;
 	background-position: center;
 	width: 100%;
 	height: calc(100vh - 60px);
-	transition: 0.5s;
+	transition: 0.5s ease-in-out;
 }
 
 #menu {
+	z-index: 999999;
 	position: fixed;
 	bottom: 0;
 	height: 60px;
 	width: 100%;
 	background-color: red;
-	transition: 0.5s;
+	transition: 0.5s ease-in-out;
 }
 
-#fixed.hide	{
+#header.way	{
+	height: 60px;
+}
+
+#fixed.way	{
 	height: 0px;
+	filter: brightness(5%);
 }
 
-#menu.hide {
+#menu.way {
 	bottom: calc(100vh - 60px);
 }
 
 #circulo {
-	background-color: #ffff00;
-	height: calc(100vh - 60px);
-	-webkit-height: calc(100vh - 60px);
+	min-height: calc(100vh - 60px);
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+#circulo.way {
+	opacity: 1;
+}
+
+.bolinha {
+	position: relative;
+	width: 100%;
+	border-radius: 100%;
+	background-color: blue;
+}
+.bolinha img {
+	opacity: 0;
+	width: 100%;
+	height: auto;
+}
+
+.bolinha h1 {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    margin: 0;
 }
