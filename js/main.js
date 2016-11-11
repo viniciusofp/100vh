@@ -1,12 +1,7 @@
 $('#circulo').waypoint(function(direction) {
-
+  $('#header').toggleClass('way');
   $('#fixed').toggleClass('way');
   $('#menu').toggleClass('way');
-
-},{
-  offset:'60px'
-});
-$('#circulo').waypoint(function(direction) {
 
   if (direction == 'down')	{
   	$('#menu').removeClass('navbar-fixed-bottom').addClass('navbar-fixed-top');
@@ -14,9 +9,15 @@ $('#circulo').waypoint(function(direction) {
   else {
   	$('#menu').addClass('navbar-fixed-bottom').removeClass('navbar-fixed-top');
   }
+
 },{
-  offset:'0px'
+  offset:'99px'
 });
+
+
+$('.navbar-toggle').click((function() {
+  $('#menu').toggleClass('high-index');
+}));
 
 
 
