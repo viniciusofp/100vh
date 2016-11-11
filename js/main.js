@@ -2,8 +2,20 @@ $('#circulo').waypoint(function(direction) {
 
   $('#fixed').toggleClass('way');
   $('#menu').toggleClass('way');
+
 },{
   offset:'60px'
+});
+$('#circulo').waypoint(function(direction) {
+
+  if (direction == 'down')	{
+  	$('#menu').removeClass('navbar-fixed-bottom').addClass('navbar-fixed-top');
+  }
+  else {
+  	$('#menu').addClass('navbar-fixed-bottom').removeClass('navbar-fixed-top');
+  }
+},{
+  offset:'0px'
 });
 
 
