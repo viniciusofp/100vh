@@ -12,7 +12,7 @@ body {
 	filter: brightness(100%);
 	z-index: 999999;
 	position: fixed;
-	background-image: url('fundo1.jpeg');
+	background-image: url('fundo2.jpeg');
 	background-size: cover;
 	background-position: center;
 	width: 100%;
